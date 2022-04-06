@@ -40,7 +40,16 @@ public class SyntaxTypesVariables {
         System.out.println(backslashes);
 
         System.out.println("\t" + "I am a tab" +someOtherQuote);
-        
+
+        //CONSTANTS:
+        final int SIDES_OF_A_DICE = 6;
+        final String API_KEY = "b75b703d8195f6f433ca";
+        final String GITHUB_API_BASE_URL = "https://api.github.com";
+
+           int sum = 1 + 1;
+           for (int i=0; i<10; i++){
+               System.out.println(i);
+           }
 
     }
 
