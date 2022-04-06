@@ -31,6 +31,17 @@ public class SyntaxTypesVariables {
         boolean markHatesJava = false;    //there is a class alternative which is a wrapper, and
         // has to do with methods
 
+        String myString = "Some String";
+
+        String someOtherQuote = "\"This is a quote by a famous person\"";
+        System.out.println(someOtherQuote);
+
+        String backslashes = "I can do backslash \\. Double backslash \\\\. Triple backslash \\\\\\.";
+        System.out.println(backslashes);
+
+        System.out.println("\t" + "I am a tab" +someOtherQuote);
+        
+
     }
 
 }
