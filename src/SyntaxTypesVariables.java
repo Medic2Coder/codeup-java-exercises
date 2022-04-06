@@ -24,7 +24,12 @@ public class SyntaxTypesVariables {
 
         double roundedPi2 = 3.141592653589793; //no suffix   //more precision
 
-         char myChar = 'A'; //single character and only time you can use single quotes
+        char myChar = 'A'; //single character and only time you can use single quotes
+
+        boolean markLovesJava = true;
+
+        boolean markHatesJava = false;    //there is a class alternative which is a wrapper, and
+        // has to do with methods
 
     }
 
