@@ -66,6 +66,9 @@ public class SyntaxTypesVariables {
 
         System.out.println(sum);
 
+        sum = 4;
+
+        System.out.println(sum);
 
 
 
