@@ -36,6 +36,8 @@ public class consolelecturenotes {
         //scanner class needs to be imported
         //scanner class is a class that allows you to read input from the console
                      //TODO: Get a way to color the console output, code, response etc
+        //all files in java are classes
+
 
     }
 
