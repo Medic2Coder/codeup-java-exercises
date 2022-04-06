@@ -36,20 +36,38 @@ public class SyntaxTypesVariables {
         String someOtherQuote = "\"This is a quote by a famous person\"";
         System.out.println(someOtherQuote);
 
-        String backslashes = "I can do backslash \\. Double backslash \\\\. Triple backslash \\\\\\.";
+        String backslashes = "I can do backslash \\. Double backslash \\\\. Triple backslash " +
+                "\\\\\\.";
         System.out.println(backslashes);
 
-        System.out.println("\t" + "I am a tab" +someOtherQuote);
+        System.out.println("\t" + "I am a tab" + someOtherQuote);
 
         //CONSTANTS:
         final int SIDES_OF_A_DICE = 6;
         final String API_KEY = "b75b703d8195f6f433ca";
         final String GITHUB_API_BASE_URL = "https://api.github.com";
 
-           int sum = 1 + 1;
-           for (int i=0; i<10; i++){
-               System.out.println(i);
-           }
+
+        int sum = 1 + 1;
+        for (int i = 0; i < 10; i++) {
+            System.out.println(i);
+        }
+
+
+        int almostPi = (int) 3.14;   // check console, will be 3
+        System.out.println(almostPi);
+
+        double pi = 3.14159;            //will be what in console?
+        System.out.println(pi);
+
+        System.out.println(sum);
+
+        System.out.println(sum++);
+
+        System.out.println(sum);
+
+
+
 
     }
 
