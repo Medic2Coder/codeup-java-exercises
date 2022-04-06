@@ -68,7 +68,19 @@ public class SyntaxTypesVariables {
 
         sum = 4;
 
-        System.out.println(sum);
+//        System.out.println(sum);
+        System.out.print(sum); // without new line
+        System.out.print(sum); // without new line
+        System.out.print(sum); // without new line
+
+
+        System.out.println(sum); //with new line
+        System.out.println(sum);  //with new line
+        System.out.println(sum); //with new line
+
+
+
+
 
 
 

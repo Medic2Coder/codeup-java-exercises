@@ -7,3 +7,6 @@ public class HelloWorld {
 }
 
 //notes
+//TODO: Finish exercise from curriculum below:
+
+//
