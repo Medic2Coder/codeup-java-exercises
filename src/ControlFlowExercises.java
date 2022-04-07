@@ -1,4 +1,4 @@
-public class ControlFlow {
+public class ControlFlowExercises {
 
     public static void main(String[] args) {
                                   //walkthrough help with Casey
@@ -61,6 +61,8 @@ public class ControlFlow {
                 //TODO: understand left justify, reference the docs
             }
         }
+
+        
 
 
 
