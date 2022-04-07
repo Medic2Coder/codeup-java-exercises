@@ -37,19 +37,30 @@ public class ControlFlow {
 //        }
 
         //fizzbuzz
-        for (int f = 1; f <= 100; f++) {
-            if (f % 3 == 0 && f % 5 == 0) {
-                System.out.println("FizzBuzz");
-            } else if (f % 3 == 0) {
-                System.out.println("Fizz");
-            }
-            else if (f % 5 == 0) {
-                System.out.println("Buzz");
-            }
-            else {
-                System.out.println(f);
+//        for (int f = 1; f <= 100; f++) {
+//            if (f % 3 == 0 && f % 5 == 0) {
+//                System.out.println("FizzBuzz");
+//            } else if (f % 3 == 0) {
+//                System.out.println("Fizz");
+//            }
+//            else if (f % 5 == 0) {
+//                System.out.println("Buzz");
+//            }
+//            else {
+//                System.out.println(f);
+//            }
+//        }
+
+                             //build a table of powers
+        for (int g = 1; g <= 10; g++) {
+            for (int h = 1; h <= 10; h++) {
+                System.out.print(g * h + " ");
+                System.out.print("------ | ------ | ------ |");
+                System.out.print(g + "^" + h + " = " + Math.pow(g, h) + " ");
+                            //TODO: format this
             }
         }
+
     }
 
 }
