@@ -58,8 +58,11 @@ public class ControlFlow {
                 System.out.print("------ | ------ | ------ |");
                 System.out.print(g + "^" + h + " = " + Math.pow(g, h) + " ");
                             //TODO: format this
+                //TODO: understand left justify, reference the docs
             }
         }
+
+
 
     }
 
