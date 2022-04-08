@@ -220,16 +220,19 @@ public class MethodsExercises {
 //         */
 //         Use recursion to implement the factorial.
 
-        public static long factorial (){
-            int n = getInteger(1,10);
-            if (n == 1) {
-                return 1;
-                while (true) {
-                    System.out.println("Are you sure you want to continue? (y/n)");
-
-                }
-            }
-
+       public static long factorial () {
+           int num = getInterger(1,10);
+           boolean run = true;
+           while (run) {
+               if (num == 1) {
+                   return 1;
+                   long total = 1;
+                   for (int i = 1; i <= num; i++) {
+                       total = total * i;
+                       //still lost, needs review
+                   }
+               }
+           }
         }
     }
 }
