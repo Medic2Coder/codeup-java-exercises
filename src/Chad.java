@@ -77,4 +77,10 @@ public class Chad {
 
 //void is absence of type, won't compile
 
+//objects in JS and JAVA are the same
+//but definition of object in JAVA is a class... so public class Chad is an object, and the
+// definition, everything inside, is a class... the definition.,, is all the internals inside
+// that curly brace... TODO: clarify this definition of "definition"
+
+
 
