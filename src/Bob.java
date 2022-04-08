@@ -1,4 +1,5 @@
 
+//notes
 
 import java.util.Scanner;
 
@@ -49,3 +50,13 @@ public class Bob {
 
 }
 
+// remember: going outside a class throws an error
+//not like java script where it will let you make errors
+//because java won't let you compile
+
+
+//errors
+//compile error won't be allowed on java
+// yet java and javascript do have runtime errors
+
+//no undefined in JAVA, it will be considered as an compile error
