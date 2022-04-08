@@ -14,6 +14,7 @@ public class Bob {
 
 //        String userInput = scanner.nextLine();
         String userInput = sc.nextLine();
+        converse(userInput);
 
 
         if (userInput.isEmpty()) {
