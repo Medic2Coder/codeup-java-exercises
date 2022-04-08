@@ -220,30 +220,22 @@ public class MethodsExercises {
 //         */
 //         Use recursion to implement the factorial.
 
-        public static long factorial ( int n){
-            int num = getInteger("Enter a number from 1 to 10: ");
-            if (num == 1) {
+        public static long factorial (){
+            int n = getInteger(1,10);
+            if (n == 1) {
                 return 1;
                 while (true) {
                     System.out.println("Are you sure you want to continue? (y/n)");
-//                    Scanner scanner = new Scanner(System.in);
-//                    String input = scanner.nextLine();
-                    String.confirm.equalsIgnoreCase("y");
-                    if (input.equalsIgnoreCase("y")) {
-                        continue;
-                    }    else {
-                        break;
-
-
-                    }
-                }
 
                 }
             }
+
         }
-
-
     }
 }
 
+//                    Scanner scanner = new Scanner(System.in);
+//                    String input = scanner.nextLine();
+//                    String.confirm.equalsIgnoreCase("y");
+//                    if (input.equalsIgnoreCase("y")) {
 
