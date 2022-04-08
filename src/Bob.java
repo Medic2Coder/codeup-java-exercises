@@ -61,3 +61,5 @@ public class Bob {
 // yet java and javascript do have runtime errors
 
 //no undefined in JAVA, it will be considered as an compile error
+
+//lots of classes but public is the default and private is next most common
