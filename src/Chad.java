@@ -4,7 +4,7 @@
 import java.util.Scanner;
 
 
-public class Bob {
+public class Chad {
 
 
     public static void main(String[] args) {
