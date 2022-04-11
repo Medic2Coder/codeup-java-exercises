@@ -12,7 +12,7 @@ public class Main {
 //           System.out.println("Salary: " + e.getSalary());
 
 //    }
-             //this is for cars.java
+             //this is for cars.java //TODO: Ask instructors how to break this code up better
     public static void main(String[] args) {
          //first create object of cars class //then assign values
         cars c = new cars("Toyota", "150mph", "50000", "2020");
