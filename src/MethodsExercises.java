@@ -202,7 +202,7 @@ public class MethodsExercises {
         while (min >= input || max <= input);       
 
 //        return input;
-                System.out.printf("input is %d", input);
+                System.out.printf("input is %d", input);     //use this to print out the input
         return input;
     }
 }
