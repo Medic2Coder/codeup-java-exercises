@@ -5,12 +5,12 @@ public class cars {
     private String name;
     private String price;
     private String topSpeed;
-    private int year;
-    public cars(String name, String price, String topSpeed, int year) {
+    private String year;
+    public cars(String name, String price, String topSpeed, String year) {
         this.name = name;
         this.price = price;
         this.topSpeed = topSpeed;
-        this.year = year;     //constructors  are used to initialize the values of the variables
+        this.year = year; //constructors  are used to initialize the values of the variables
     }
 
     public String getName() {
@@ -37,11 +37,11 @@ public class cars {
         this.topSpeed = topSpeed;
     }
 
-    public int getYear() {
+    public String getYear() {
         return year;
     }
 
-    public void setYear(int year) {
+    public void setYear(String year) {
         this.year = year;
     }
 
