@@ -163,6 +163,9 @@ Food for thought: What happens if we try to divide by zero? What should happen?
 import java.util.Scanner;
 
 public class MethodsExercises {
+    public static void main(String[] args) {
+        getInteger(1, 10);
+    }
 
 
     public static double addition(double n1, double n2) {
@@ -186,15 +189,26 @@ public class MethodsExercises {
     }
 
     //Create a method that validates the user input is in a certain range
-    public static int getInteger(String prompt) {
+    public static int getInteger(int min, int max) {
         Scanner scanner = new Scanner(System.in);
-        int input = scanner.nextInt();
-        System.out.printf("Invalid number. Please enter a number between 1 and 10: ");
+        int input = 0; // to give it initial default value  // and cannot be null (major
+        // difference b.t js and java
+        //do while loop is recursive
+        do {
+            //get number
+            System.out.printf("Invalid number. Please enter a number between 1 and 10: ");
+            input = scanner.nextInt();
+        }
+        while (min >= input || max <= input);                // input is outside of our range
+
         return input;
 
+    }
+}
 ////TODO 3. Calculate the factorial of a number.
 //
 //Prompt the user to enter an integer from 1 to 10.
+
 //Display the factorial of the number entered by the user.
 //Ask if the user wants to continue.
 //Use a for loop to calculate the factorial.
@@ -222,7 +236,8 @@ public class MethodsExercises {
 //
 //                             TODO: Review Recursion
 //        Recursion is a concept that aims to solve a problem by dividing it into smaller chunks.
-//        The core idea of recursion is creating a method that calls itself, but with different parameters than were originally passed.
+//        The core idea of recursion is creating a method that calls itself, but with different
+//        parameters than were originally passed.
 //             TODO: Review e.g., of Counting from 5 to 1 using recursion:
 //        public static void count(int n) {
 //            if (n <= 0) {
@@ -233,26 +248,37 @@ public class MethodsExercises {
 //            count(n - 1);
 //        }
 
-        public static void main(String[] args) {
-            count(5);
-        }
+//        public static void main(String[] args) {
+//            count(5);
+//        }
 
-       public static long factorial () {
-           int num = getInterger(1,10);
-           boolean run = true;
-           while (run) {
-               if (num == 1) {
-                   return 1;
-                   long total = 1;
-                   for (int i = 1; i <= num; i++) {
-                       total = total * i;
-//                       //still lost, TODO: needs review
-                   }
-               }
-           }
-        }
-    }
-}
+//       public static long factorial () {
+//           int num = getInterger(1,10);
+//           boolean run = true;
+//           while (run) {
+//               if (num == 1) {
+//                   return 1;
+//                   long total = 1;
+//                   for (int i = 1; i <= num; i++) {
+//                       total = total * i;
+////                       //still lost, TODO: needs review
+//                   }
+//               }
+//           }
+//        }
+
+//        public static long factorial(int num) {
+//            if (num == 1) {
+//                return 1;
+//                long total = 0;
+//                for (int i = 1; i <= num; i++) {
+//                    total = total * i;
+//                            system.out.println
+//
+//                }
+//            }
+//        }
+
 
 //                    Scanner scanner = new Scanner(System.in);
 //                    String input = scanner.nextLine();
