@@ -219,21 +219,38 @@ public class MethodsExercises {
 // */
 //         */
 //         Use recursion to implement the factorial.
-
-//       public static long factorial () {
-//           int num = getInterger(1,10);
-//           boolean run = true;
-//           while (run) {
-//               if (num == 1) {
-//                   return 1;
-//                   long total = 1;
-//                   for (int i = 1; i <= num; i++) {
-//                       total = total * i;
-//                       //still lost, TODO: needs review
-//                   }
-//               }
-//           }
+//
+//                             TODO: Review Recursion
+//        Recursion is a concept that aims to solve a problem by dividing it into smaller chunks.
+//        The core idea of recursion is creating a method that calls itself, but with different parameters than were originally passed.
+//             TODO: Review e.g., of Counting from 5 to 1 using recursion:
+//        public static void count(int n) {
+//            if (n <= 0) {
+//                System.out.println("All done!");
+//                return;
+//            }
+//            System.out.println(n);
+//            count(n - 1);
 //        }
+
+        public static void main(String[] args) {
+            count(5);
+        }
+
+       public static long factorial () {
+           int num = getInterger(1,10);
+           boolean run = true;
+           while (run) {
+               if (num == 1) {
+                   return 1;
+                   long total = 1;
+                   for (int i = 1; i <= num; i++) {
+                       total = total * i;
+//                       //still lost, TODO: needs review
+                   }
+               }
+           }
+        }
     }
 }
 
