@@ -199,12 +199,16 @@ public class MethodsExercises {
             System.out.printf("Invalid number. Please enter a number between 1 and 10: ");
             input = scanner.nextInt();
         }
-        while (min >= input || max <= input);                // input is outside of our range
+        while (min >= input || max <= input);       
 
+//        return input;
+                System.out.printf("input is %d", input);
         return input;
-
     }
 }
+
+
+
 ////TODO 3. Calculate the factorial of a number.
 //
 //Prompt the user to enter an integer from 1 to 10.
