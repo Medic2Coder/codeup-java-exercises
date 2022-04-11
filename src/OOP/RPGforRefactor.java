@@ -5,7 +5,7 @@ package OOP;
 import java.util.Random;
 import java.util.Scanner;
 
-public class ZombieLand {
+public class RPGforRefactor {
 
     public static void main(String[] args) {
 
