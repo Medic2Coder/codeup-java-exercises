@@ -36,3 +36,5 @@ public class Circle {
     }
 }
            //set radius once circle object is created
+
+//TODO: remember that classes are blueprints for objects we can create
