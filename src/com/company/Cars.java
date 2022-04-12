@@ -1,11 +1,11 @@
 package com.company;
 
-public class cars {
+public class Cars {
     private String name;
     private String price;
     private String topSpeed;
     private String year;
-    public cars(String name, String price, String topSpeed, String year) {
+    public Cars(String name, String price, String topSpeed, String year) {
         this.name = name;
         this.price = price;
         this.topSpeed = topSpeed;

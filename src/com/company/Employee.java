@@ -1,7 +1,7 @@
 package com.company;
 
 
-public class employee {
+public class Employee {
     private String name;   //when we use encapsulation we use private variables everytime
     private int ID;
     private int salary;
