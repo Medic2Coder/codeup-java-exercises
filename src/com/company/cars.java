@@ -1,6 +1,5 @@
 package com.company;
 
-
 public class cars {
     private String name;
     private String price;
