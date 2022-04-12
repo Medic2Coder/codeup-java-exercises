@@ -38,7 +38,5 @@ public class BookCase {
         System.out.println("Notes Scribbled is " + bookCase.getNotesScribbled());
 
     }
-
-
 }
 
