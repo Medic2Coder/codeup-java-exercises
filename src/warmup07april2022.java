@@ -17,7 +17,10 @@ public class warmup07april2022 {
         }
 
     }
-
+                   //TODO: Parse int from string
+    public static int parseInt(String string) {
+        return Integer.parseInt(string);
+    }
 }
 
 
