@@ -1,6 +1,9 @@
 package JavaTutorialAmazingness;
 
-public class LearningTheThing {
+import java.util.ArrayList;
+
+public class LearningTheThing {      //TODO: review that class is just a java file  that helps us
+    // ...make objects
 
     public static void main(String[] args) {
         int a = 5;
@@ -16,27 +19,50 @@ public class LearningTheThing {
         String dog = e.iAmDog();
         System.out.println(dog);
         
-
-        addExclamationPoint("hot dogs"); //this is a method call, it's a function call
-
+        //importing other common objects like arrays:
+        ArrayList<Integer> myList = new ArrayList<Integer>();
+        myList.add(1); //remember each object has its own methods
+        myList.add(2);
+        myList.add(3);
+        System.out.println(myList);
+        //TODO: review object oriented programming, each class represents its own object which
+        // has its own methods
 
         //yay you can do so many things with objects!
+        addExclamationPoint("hot dogs"); //this is a method call, it's a function call
 
         String name = "Markle"; //semi colons help Java parse it to make sense of it al
         // if it's a different color, like string in this case, it's an object!
         //to do crazy things with the object, just type the objects name and then the dot operator
-        System.out.println(name.toUpperCase()); //toUpperCase() is a method that's part of the string class
+        System.out.println(name.toUpperCase()); //toUpperCase() is a method that's part of the
+        // string class
         System.out.println(name.toLowerCase());
 
+
+        doStuff();
+
     }
 
-        private static void addExclamationPoint(String s) {
-            System.out.println(s + "!");//to put two strings together,
-            // you need to use the +
-            // operator
+    private static void addExclamationPoint(String s) {
+        System.out.println(s + "!");//to put two strings together,
+        // you need to use the +
+        // operator
     }
 
+    public static void doStuff() {
+        int a = 5;
 
+        if (a == 0) {
+            System.out.println("a is 0");
+
+        } else if (a == 1) {
+            System.out.println("a is 1");
+        } else {
+            System.out.println("a is not 0 or 1");
+        }
+
+
+    }
 
 
 }
