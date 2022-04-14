@@ -18,7 +18,7 @@ public class LearningTheThing {      //TODO: review that class is just a java fi
         Animal e = new Animal();    //objects will always have this format
         String dog = e.iAmDog();
         System.out.println(dog);
-        
+
         //importing other common objects like arrays:
         ArrayList<Integer> myList = new ArrayList<Integer>();
         myList.add(1); //remember each object has its own methods
@@ -41,6 +41,8 @@ public class LearningTheThing {      //TODO: review that class is just a java fi
 
         doStuff();
 
+        doMoreStuff();
+
     }
 
     private static void addExclamationPoint(String s) {
@@ -60,12 +62,17 @@ public class LearningTheThing {      //TODO: review that class is just a java fi
         } else {
             System.out.println("a is not 0 or 1");
         }
-
-
     }
-
-
+    public static void doMoreStuff() {
+        int b = 5;
+        for (int i = 0; i < 5; i++) {   // will run the code 5 times, same if i <b
+            for (int j = 0; i < 5; i++) {       //can put for loop inside a loop
+                   System.out.println("i is " + i + " and j is " + j);
+            }
+        }
+    }
 }
+
 
 
 
