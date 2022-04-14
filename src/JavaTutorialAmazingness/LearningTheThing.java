@@ -11,6 +11,12 @@ public class LearningTheThing {
         System.out.println(b);
         System.out.println(c);
         System.out.println(d);
+        //to start a method... keywords has it's own purpose
+        Animal e = new Animal();    //objects will always have this format
+        String dog = e.iAmDog();
+        System.out.println(dog);
+        
+
         addExclamationPoint("hot dogs"); //this is a method call, it's a function call
 
 
@@ -22,16 +28,18 @@ public class LearningTheThing {
         System.out.println(name.toUpperCase()); //toUpperCase() is a method that's part of the string class
         System.out.println(name.toLowerCase());
 
-        //to start a method... keywords has it's own purpose
     }
 
         private static void addExclamationPoint(String s) {
-            System.out.println(s + "!"); //to put two strings together,
+            System.out.println(s + "!");//to put two strings together,
             // you need to use the +
             // operator
-            
     }
+
 
 
 
 }
+
+
+
