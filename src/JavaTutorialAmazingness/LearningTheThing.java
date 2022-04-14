@@ -43,6 +43,10 @@ public class LearningTheThing {      //TODO: review that class is just a java fi
 
         doMoreStuff();
 
+        doEvenMoreStuff();
+
+        doEvenMoreStuffSeriously();
+
     }
 
     private static void addExclamationPoint(String s) {
@@ -71,6 +75,26 @@ public class LearningTheThing {      //TODO: review that class is just a java fi
             }
         }
     }
+    public static void doEvenMoreStuff() {
+        double c = 0.25;
+        while (c <= 0.25 ) {
+            System.out.println("Time to fuel up the car because your tank is " + c);  //this is
+            // an infinite loop unless you end it
+            c++;                                //ended it
+        }
+    }
+
+    public static void doEvenMoreStuffSeriously() {
+        int c = 5;
+
+        try {
+            
+        }  catch (Exception e) {
+            System.out.println("Something went wrong");
+        }
+    }
+
+
 }
 
 
