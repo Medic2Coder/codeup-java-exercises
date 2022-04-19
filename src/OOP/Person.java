@@ -38,11 +38,12 @@ public class Person {
         this.address = address;
     }
 
-    public Person() {
+    public Person(String name) {
         this.name = name;
-        this.age = age;
-        this.dateOfBirth = dateOfBirth;
-        this.address = address;
+
+//        this.age = age;
+//        this.dateOfBirth = dateOfBirth;
+//        this.address = address;
     }
 
 }
