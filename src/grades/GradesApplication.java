@@ -27,41 +27,43 @@ public class GradesApplication {
         student4.addGrade(90);
         student4.addGrade(100);
 
-        //Create command line interface prints list of students and their grades
 
+        //Create command line interface prints list of students and their grades
         students.put("gitusername1", student1);
         students.put("gitusername2", student2);
         students.put("gitusername3", student3);
         students.put("gitusername4", student4);
 
         //ask the user which student they want to see grades for
-        System.out.println("Which student would you like to see grades for?");
         System.out.println("Enter the git username of the student you would like to see grades " +
                 "for");
-        String gitUsername = System.console().readLine();
-        Student student = null;
-        if (students.containsKey(gitUsername)) {
-            student = students.get(gitUsername);
-            System.out.println("The grades for " + student.getName() + " are: ");
-            for (int i = 0; i < student.getGrades().size(); i++) {
-                System.out.println(student.getGrades().get(i));
-            } //end for loop
+        if (students.containsKey(args[0])) {
+            System.out.println("The grades for " + args[0] + " are: ");
+            for (int i = 0; i < students.get(args[0]).getGrades().size(); i++) {
+                System.out.println(students.get(args[0]).getGrades().get(i));
+
+            }
         }
-        else {
-            System.out.println("That student does not exist");
-        } //end if statement
+//        if (students.containsKey(gitUsername)) {
+//            System.out.println("The grades for " + gitUsername + " are: " + students.get(gitUsername).getGrades());
+//        }
 
-        //print the average grade for the student
-        System.out.println("The average grade for " + student.getName() + " is: " + student.getAverageGrade());
-
+        
     }
 }
 
 
 
+
+
+
+
+//    public double getGradeAverage() {
+//        return (double) grade / 3;
+
+
+
         //ask the user if they want to continue and keep running if they do
-
-
 
 
 //        students = new HashMap<String, Student>();
