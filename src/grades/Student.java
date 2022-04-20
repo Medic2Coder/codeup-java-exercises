@@ -10,12 +10,23 @@ public class Student {
         Student s1 = new Student();
         s1.setName("John");
         s1.setGrade(90);
+        s1.addGrade(80);
+        s1.addGrade(70);
         System.out.println(s1.getName() + " " + s1.getGrade());
 
         Student s2 = new Student();
         s2.setName("Jane");
         s2.setGrade(80);
+        s2.addGrade(70);
+        s2.addGrade(60);
         System.out.println(s2.getName() + " " + s2.getGrade());
+
+        Student s3 = new Student();
+        s3.setName("Joe");
+        s3.setGrade(70);
+        s3.addGrade(60);
+        s3.addGrade(50);
+        System.out.println(s3.getName() + " " + s3.getGrade());
     }
 
     public String getName() {
@@ -39,7 +50,7 @@ public class Student {
     }
 
     public double getGradeAverage() {
-        return (double) grade / 2;
+        return (double) grade / 3;
     }
 
 

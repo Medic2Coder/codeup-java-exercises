@@ -13,14 +13,14 @@ public class GradesApplication {
      grades.put("F", 50);
      grades.put("Excellent!", 100);
 
-     HashMap<Object, Object> students = new HashMap<>();
-     students.put("John", 100, 90, 80);
-     students.put(100, 70, 90, "Mary");
-     students.put(90, 90, 60, "Bob");
-     students.put(90, 90, 60, "Jane");
-     students.put(90, 90, 60, "Sally");
+//     HashMap<Object, Object> students = new HashMap<>();
+//     students.put("John", 100, 90, 80);
+//     students.put(100, 70, 90, "Mary");
+//     students.put(90, 90, 60, "Bob");
+//     students.put(90, 90, 60, "Jane");
+//     students.put(90, 90, 60, "Sally");
 
-     System.out.println(students);
+//     System.out.println(students);
      System.out.println(grades);
     }
 }
