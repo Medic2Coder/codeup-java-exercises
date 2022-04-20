@@ -1,11 +1,14 @@
 package grades;
 
 import java.util.HashMap;
+import java.util.Scanner;
 
 public class GradesApplication {
 
 
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
         //HashMap named students with keys of type String and values of type Student Objects with
         // 4 Student Objects with 3 grades each
 
@@ -37,13 +40,15 @@ public class GradesApplication {
         //ask the user which student they want to see grades for
         System.out.println("Enter the git username of the student you would like to see grades " +
                 "for");
-        if (students.containsKey(args[0])) {
-            System.out.println("The grades for " + args[0] + " are: ");
-            for (int i = 0; i < students.get(args[0]).getGrades().size(); i++) {
-                System.out.println(students.get(args[0]).getGrades().get(i));
+        String gitUsername = scanner.nextLine();
 
-            }
+        //if the student is in the hashmap, print the grades
+        if (students.containsKey(gitUsername)) {
+            Student student = students.get(gitUsername);
+            System.out.println("The grades for " + student.getName() + " are: "+ student.getGrades());
         }
+        
+
 //        if (students.containsKey(gitUsername)) {
 //            System.out.println("The grades for " + gitUsername + " are: " + students.get(gitUsername).getGrades());
 //        }
