@@ -6,11 +6,24 @@ public class Student {
 
     private double gradeAverage;
 
+
+    private String gitusername;
+
+
     public Student(String john, String gitusername) {
         this.name = john;
         this.grade = 90;
         this.gradeAverage = (double) grade / 3;
+        this.gitusername = gitusername;
     }
+    public String getGitusername() {
+        return gitusername;
+    }
+
+    public void setGitusername(String gitusername) {
+        this.gitusername = gitusername;
+    }
+
 
     public String getName() {
         return name;

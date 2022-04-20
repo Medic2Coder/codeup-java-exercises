@@ -12,50 +12,59 @@ public class GradesApplication {
         //HashMap named students with keys of type String and values of type Student Objects with
         // 4 Student Objects with 3 grades each
         HashMap<String, Student> students = new HashMap<>();
-        Student student1 = new Student("John", "gitusername1");
+        Student student1 = new Student("John", "uniqueGitName");
         student1.addGrade(100);
         student1.addGrade(90);
         student1.addGrade(80);
-        Student student2 = new Student("Jane", "gitusername2");
+        Student student2 = new Student("Jane", "SuperUniqueGitName");
         student2.addGrade(100);
         student2.addGrade(70);
         student2.addGrade(100);
-        Student student3 = new Student("Joe", "gitusername3");
+        Student student3 = new Student("Joe", "gitNameOfSomeSort");
         student3.addGrade(100);
         student3.addGrade(60);
         student3.addGrade(80);
-        Student student4 = new Student("Jack", "gitusername4");
+        Student student4 = new Student("Jack", "anotherGitName");
         student4.addGrade(100);
         student4.addGrade(90);
         student4.addGrade(100);
 
-        //Create command line interface prints list of students and their grades
-        students.put("gitusername1", student1);
-        students.put("gitusername2", student2);
-        students.put("gitusername3", student3);
-        students.put("gitusername4", student4);
 
-//        Print the list of GitHub usernames out to the console, and ask the user which student they would like to see more information about.
+        System.out.println("**************************************************************************************");
+        System.out.println("Welcome! Here are the GitHub usernames of our students:");
+        System.out.println("**************************************************************************************");
+        //        Print the list of GitHub usernames out to the console, and ask the user which student they would like to see more information about.
 
-        System.out.println("Here are the GitHub usernames of our students:");
         for (String key : students.keySet()) {
             System.out.println(key);
         }
+        //Create command line interface prints list of students and their getgrades
+        students.put("uniqueGitName = John",  student1);
+        students.put("SuperUniqueGitName = Jane", student2);
+        students.put("gitNameOfSomeSort = Joe", student3);
+        students.put("anotherGitName = Jack", student4);
+
+
+
         System.out.println("Which student would you like to see more information about?");
+        System.out.println("----------------------------------------------------");
+
 
         //Enter 1 for gitusername1 and 2 for gitusername2 and 3 for gitusername3 and 4 for
         // gitusername4
-        System.out.println("Enter 1 and press return/enter for gitusername1 and 2 for " +
-                "gitusername2 and 3 for gitusername3 and 4 for gitusername4");
+        System.out.println(
+                "Enter number and return/enter:\n  1 for uniqueGitName\n  2 for SuperUniqueGitName\n  3 " +
+                        "for gitNameOfSomeSort\n  4 for anotherGitName");
+        System.out.println("----------------------------------------------------");
         int userInput = scanner.nextInt();
         if (userInput == 1) {
-            System.out.println("gitusername1's grades are: " + student1.getGrades());
+            System.out.println(student1.getGitusername() +  "'s grades are: " +  student1.getGrades());
         } else if (userInput == 2) {
-            System.out.println("gitusername2's grades are: " + student2.getGrades());
+            System.out.println(student2.getGitusername() +  "'s grades are: " +  student2.getGrades());
         } else if (userInput == 3) {
-            System.out.println("gitusername3's grades are: " + student3.getGrades());
+            System.out.println(student3.getGitusername() +  "'s grades are: " + student3.getGrades());
         } else if (userInput == 4) {
-            System.out.println("gitusername4's grades are: " + student4.getGrades());
+            System.out.println(student4.getGitusername() +  "'s grades are: " + student4.getGrades());
         }
         //output if invalid git username or student not in hashmap
         else {
