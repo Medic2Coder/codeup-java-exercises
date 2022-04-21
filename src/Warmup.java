@@ -3,11 +3,24 @@ public class Warmup {
     // string is a palindrome
 
     public static void main(String[] args) {
-//        System.out.println(Warmup.isPalindrome("racecar"));
+        System.out.println("************************************");
+        System.out.println("Using 'isPalindrome': \n\t");
+        System.out.println(Warmup.isPalindrome("racecar"));
         System.out.println(Warmup.isPalindrome("hello"));
+        System.out.println("------------------------------------");
+        System.out.println("************************************");
 
-//        System.out.println(Warmup.isPalindrome2("racecar"));
-//        System.out.println(Warmup.isPalindrome2("hello"));
+
+
+
+        System.out.println("\n************************************");
+        System.out.println("Using 'Palindrome2': \n\t");
+        System.out.println(Warmup.isPalindrome2("racecar"));
+        System.out.println(Warmup.isPalindrome2("hello"));
+        System.out.println("------------------------------------");
+        System.out.println("************************************");
+
+
 
     }
 
@@ -35,32 +48,19 @@ public class Warmup {
         }
         //return true if the loop completes
         return true;
+    }
 
 
-//    public static boolean isPalindrome2(String s) {
-//        StringBuilder sb = new StringBuilder(s);
-//        StringBuilder sbReverse = sb.reverse();
-//        if (s.equals(String.valueOf(sbReverse))) {
-//            return true;
-//        }
-//        return false;
+    public static boolean isPalindrome2(String s) {
+        StringBuilder sb = new StringBuilder(s);
+        StringBuilder sbReverse = sb.reverse();
+        if (s.equals(String.valueOf(sbReverse))) {
+            return true;
+        }
+        return false;
 
     }
 }
-
-//        public class PalindromeChecker {
-//            public static boolean isPalindrome(String str){
-//                StringBuilder sb=new StringBuilder(str);
-//                sb.reverse();
-//                String rev=sb.toString();
-//                if(str.equals(rev)){
-//                    return true;
-//                }else{
-//                    return false;
-//                }
-//            }
-//        }
-
 
 
 
