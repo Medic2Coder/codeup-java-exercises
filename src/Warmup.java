@@ -3,10 +3,14 @@ public class Warmup {
     // string is a palindrome
 
     public static void main(String[] args) {
-        System.out.println(Warmup.isPalindrome("racecar"));
+//        System.out.println(Warmup.isPalindrome("racecar"));
         System.out.println(Warmup.isPalindrome("hello"));
 
+//        System.out.println(Warmup.isPalindrome2("racecar"));
+//        System.out.println(Warmup.isPalindrome2("hello"));
+
     }
+
     public static boolean isPalindrome(String str) {
         //create a boolean variable to store the result
         boolean result = false;
@@ -33,7 +37,30 @@ public class Warmup {
         return true;
 
 
+//    public static boolean isPalindrome2(String s) {
+//        StringBuilder sb = new StringBuilder(s);
+//        StringBuilder sbReverse = sb.reverse();
+//        if (s.equals(String.valueOf(sbReverse))) {
+//            return true;
+//        }
+//        return false;
+
     }
 }
+
+//        public class PalindromeChecker {
+//            public static boolean isPalindrome(String str){
+//                StringBuilder sb=new StringBuilder(str);
+//                sb.reverse();
+//                String rev=sb.toString();
+//                if(str.equals(rev)){
+//                    return true;
+//                }else{
+//                    return false;
+//                }
+//            }
+//        }
+
+
 
 
